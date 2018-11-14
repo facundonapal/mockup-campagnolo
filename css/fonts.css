@@ -1,0 +1,197 @@
+/*--------------------------------------------------
+CAMMPAGNOLO SVG ICONS
+--------------------------------------------------*/
+@font-face {
+  font-family: "campagnolo";
+  src:url("../fonts/campagnolo.eot");
+  src:url("../fonts/campagnolo.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/campagnolo.woff") format("woff"),
+    url("../fonts/campagnolo.ttf") format("truetype"),
+    url("../fonts/campagnolo.svg#campagnolo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "campagnolo" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "campagnolo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cambio:before {
+  content: "a";
+}
+.icon-freno:before {
+  content: "b";
+}
+.icon-ruota:before {
+  content: "c";
+}
+.icon-corona:before {
+  content: "f";
+}
+.icon-download:before {
+  content: "g";
+}
+.icon-pin:before {
+  content: "j";
+}
+.icon-compare:before {
+  content: "d";
+}
+.icon-features:before {
+  content: "h";
+}
+.icon-pin:before {
+  content: "i";
+}
+.icon-share:before {
+  content: "j";
+}
+.icon-catalogo:before {
+  content: "e";
+}
+.icon-interfaccia:before {
+  content: "k";
+}
+.icon-pignoni:before {
+  content: "l";
+}
+.icon-power-unit:before {
+  content: "m";
+}
+.icon-calotte:before {
+  content: "n";
+}
+.icon-catena:before {
+  content: "o";
+}
+.icon-comandi:before {
+  content: "p";
+}
+.icon-componenti:before {
+  content: "q";
+}
+.icon-deragliatore:before {
+  content: "r";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura:before {
+  content: "s";
+}
+.icon-guarnitura-1:before {
+  content: "t";
+}
+.icon-preferiti:before {
+  content: "t";
+}
+.icon-mycampy:before {
+  content: "u";
+}
+.icon-filtro-0:before {
+  content: "v";
+}
+.icon-filtro-1:before {
+  content: "w";
+}
+.icon-filtro-2:before {
+  content: "x";
+}
+.icon-filtro-3:before {
+  content: "y";
+}
+.icon-freno:before {
+  content: "b";
+}
+.icon-filtro-4:before {
+  content: "A";
+}
+.icon-filtro-5:before {
+  content: "B";
+}
+.icon-filtro-6:before {
+  content: "C";
+}
+.icon-fontawesome-webfont:before {
+  content: "E";
+}
+.icon-fontawesome-webfont:before {
+  content: "E";
+}
+.icon-news:before {
+  content: "E";
+}
+.icon-print:before {
+  content: "F";
+}
+.icon-benefits:before {
+  content: "G";
+}
+.icon-headquarter:before {
+  content: "H";
+}
+.icon-filiale:before {
+  content: "I";
+}
+.icon-pin2:before {
+  content: "J";
+}
+.icon-mycampy:before {
+  content: "u";
+}
+.icon-filtro-7-1:before {
+  content: "z";
+}
+.icon-filtro-7:before {
+  content: "z";
+}
+.icon-bar-end-command:before {
+  content: "D";
+}
+.icon-bar-end-freni:before {
+  content: "K";
+}
+.icon-listino:before {
+  content: "L";
+}
+.icon-ladro:before {
+  content: "M";
+}
+.icon-safety:before {
+  content: "N";
+}

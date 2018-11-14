@@ -1,0 +1,205 @@
+#main_menu ul li a {
+    color: #252424;
+    font-weight: 600;
+    font-size:16px;
+}
+
+#header {
+    border-bottom: 1px solid #ebeef0;
+}
+
+#sub_menu{
+    background-color: #fff;
+    /*height: 332px !important;
+    border-top: 1px solid #ebeef0;*/
+    box-shadow: 0px 11px 81px rgba(0,0,0,.5);
+}
+
+#sub_menu_content #place_image {
+    position: absolute;
+    width: 45%;
+    height: 332px;
+    background-color: #ebeef0;
+    right: -230px;
+    min-height: 230px;
+}
+
+#sub_menu_content ul.soluzioni li a {
+    color: #000;
+    border: 0;
+    font-size: 18px;
+}
+
+#sub_menu_content ul.soluzioni li ul li a {
+    color: #4d6172;
+    font-size: 16px;
+    cursor: pointer !important;
+    font-weight: 700;
+}
+
+#sub_menu_content ul.soluzioni li ul li a.te, #sub_menu_content ul.soluzioni li ul li a.tm {
+    font-weight: 400;
+    color: #000;
+    margin-top: 20px;
+}
+
+#sub_menu_content ul.soluzioni li ul li a.te:hover,
+#sub_menu_content ul.soluzioni li ul li a.te:focus,
+#sub_menu_content ul.soluzioni li ul li a.tm:hover,
+#sub_menu_content ul.soluzioni li ul li a.tm:focus{
+    color: #54c9ff;
+}
+
+#sub_menu_content ul.soluzioni li .imp {
+    font-weight: 400;
+    color: #000;
+}
+
+#sub_menu_content #place_image img {
+    width: auto;
+    max-width: 100%;
+}
+
+#sub_menu_content ul.soluzioni li:nth-child(3n+1) {
+    clear: none;
+}
+
+#sub_menu_content ul.tecnologie li {
+    width: 18%;
+}
+
+#place_image {
+    padding: 20px;
+}
+
+#place_image span {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+}
+
+#place_image span:after {
+    display: none;
+}
+
+#place_image p {
+    /*padding-left: 20px;*/
+    margin-top: 120px;
+}
+/* MD */
+@media (min-width:992px) and (max-width:1199px) {
+    #place_image p {
+        margin-top: 30px;
+        margin-left: -10px;
+    }
+}
+/* SM */
+@media (min-width:768px) and (max-width:991px) {
+    #place_image p {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+}
+
+#place_image p a {
+    color: #252424;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#place_image p a:hover, #place_image p a:focus {
+    color: #01437d;
+    text-decoration: none;
+}
+
+/* Top Menu */
+.extra_link {}
+.extra_link ul.dropmenu {
+    display: none;
+    list-style: none;
+    background: #1f1d1e;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    left: -20px;
+    width: 250px;
+}
+
+.extra_link ul.dropmenu li {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.extra_link ul.dropmenu li:last-child {
+    border-bottom: 0;
+}
+
+.extra_link ul.dropmenu li a{
+    padding: 6px 20px !important;
+    display: block;
+    line-height: normal;
+}
+
+@media (max-width: 1024px) {
+    #sub_menu_content #place_image {
+        width: 54%;
+    }
+    #sub_menu_content ul.soluzioni li {
+        width: 23%;
+    }
+    #sub_menu_content ul.soluzioni li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+    #sub_menu_content #place_image {
+        width: 54%;
+    }
+    #sub_menu_content ul.soluzioni li {
+        width: 23%;
+    }
+    #sub_menu_content ul.soluzioni li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+@media (max-width: 768px) {
+    #sub_menu_content #place_image {
+        width: 60%;
+        padding: 20px 10px;
+    }
+    #sub_menu_content #place_image img {
+        width: 50%;
+    }
+    #sub_menu_content ul.soluzioni li {
+        width: 23%;
+    }
+    #sub_menu_content ul.soluzioni li:nth-child(3n+1) {
+        clear: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #sub_menu_content #place_image {
+        width: 60%;
+        padding: 20px 10px;
+    }
+    #sub_menu_content #place_image img {
+        /*width: 50%;*/
+        width: 20%;
+    }
+    #sub_menu_content ul.soluzioni li {
+        width: 23%;
+    }
+    #sub_menu_content ul.soluzioni li:nth-child(3n+1) {
+        clear: left;
+    }
+}
