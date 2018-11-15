@@ -4,10 +4,28 @@
 ==========================*/
 
 
-.ps-carousel.ps-theme-modern .ps-img-container img {
+
+#campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal {
+    background: transparent !important;
+    padding: 12px 15px !important;
+}
+
+#campagnolo-carousel-home .ps-carousel-slider .ps-slider-horizontal {
+    padding: 12px 15px !important;
+}
+
+
+#campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-img-container img {
     border: none !important;
 }
 
+#campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal nav span.ps-next {
+    right: -50px !important;
+}
+
+#campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal nav span.ps-prev {
+    left: -50px !important;
+}
 
 /*=========================
     LOOKBOOK STYLES
@@ -84,7 +102,7 @@
     padding: 7px 15px !important;
     font-size: 12px !important;
     text-transform: uppercase !important
-;    border: solid 1px #181818 !important;
+    border: solid 1px #181818 !important;
     text-decoration: none !important;
     margin-top: 15px !important;
     text-align: center !important;
