@@ -1,0 +1,104 @@
+
+/*=========================
+    HOMEPAGE STYLES
+==========================*/
+
+
+.ps-carousel.ps-theme-modern .ps-img-container img {
+    border: none !important;
+}
+
+
+/*=========================
+    LOOKBOOK STYLES
+==========================*/
+
+
+#tab-heading {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-family: 'minion-pro';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 75px 0 59px 0;
+}
+
+.wrapper-widgets {
+    max-width: 1200px;
+    width: 100%;
+    margin: 44px auto;
+}
+
+.tabss {
+    text-align: center !important;
+}
+
+.tabss input[type=radio] {
+    display:none;
+}
+
+.tabss label {
+    display: inline-grid;
+    width: 24%;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    margin-bottom: 57px;
+    transition: border-bottom 1s ease;
+    border-bottom: 1px transparent solid;
+}
+
+
+.tabss [id^="tab"]:checked + label {
+    border-bottom: 1px solid #05301a;
+    border-bottom-width: thin; 
+}
+
+.tab-style {
+    color: #181818;
+    font-size: 14px;
+    font-family: 'minion-pro';
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+ #tab1:checked ~ #tab-content1,
+ #tab2:checked ~ #tab-content2,
+ #tab3:checked ~ #tab-content3,
+ #tab4:checked ~ #tab-content4 {
+    display: block;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.ps-load-more-button {
+    /* display: block !important; */
+    padding: 7px 15px !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important
+;    border: solid 1px #181818 !important;
+    text-decoration: none !important;
+    margin-top: 15px !important;
+    text-align: center !important;
+    color: #181818 !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+    font-family: 'proxima-nova' !important;
+    text-shadow: none !important;
+    border-radius: 0px !important;
+    background: none !important;
+    min-width: 120px !important;
+}
+
+.ps-load-more-button:hover {
+     color: #fff !important;
+    background: #181818 !important;
+}

@@ -306,7 +306,7 @@ Main Menu
 
 #menu {
     float: left;
-    width: 705px;
+    width: 980px;
     height: 80px;
 }
 
@@ -686,7 +686,7 @@ Sub Menu
 Search
 --------------------------------------------------*/
 .search {
-    width: 200px;
+    width: 217px;
     float: right;
     z-index: 0;
     position: relative;
@@ -744,7 +744,7 @@ Search
     }
 
     .search {
-        width: 150px;
+        width: 136px;
     }
 }
 
