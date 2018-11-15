@@ -319,7 +319,7 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .img-responsive {
@@ -745,7 +745,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1472px;
+        width: 1170px;
     }
 }
 

@@ -2,8 +2,14 @@
 /*=========================
     HOMEPAGE STYLES
 ==========================*/
+#wrapper-canvas {
+    position: relative;
+    right: 33px;
+}
 
-
+#wrapper-carousel-home {
+    /* margin-top: 74px !important; */
+}
 
 #campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal {
     background: transparent !important;
@@ -25,7 +31,7 @@
 
 #campagnolo-carousel-home .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal nav span.ps-prev {
     left: -50px !important;
-}
+
 
 /*=========================
     LOOKBOOK STYLES

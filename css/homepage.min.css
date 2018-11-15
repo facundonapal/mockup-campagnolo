@@ -1009,7 +1009,14 @@
 
 #elenco_news {
     padding: 30px 0;
-    background: #ececec;
+    width: 1600px !important;  
+    margin: 0 auto !important;
+    background-color: #fff;
+}
+
+#landing_cavatappi {
+    width: 1600px !important;
+    margin: 0 auto !important;
 }
 
 #elenco_news .header_elenco_news {

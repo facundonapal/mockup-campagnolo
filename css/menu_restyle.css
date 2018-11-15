@@ -18,8 +18,9 @@ Header & Menu
 #header .logo {
     float: left;
     position: relative;
-    top: 52%;
+    top: 19%;
     transform: translateY(-50%);
+    transform: translateX(-77%);
     width: 235px;
 }
 
@@ -101,7 +102,8 @@ Top Menu
     color: #fff;
     font-size: 14px;
     line-height: 39px;
-    height: 40px; /*margin-bottom: 25px;*/
+    height: 40px;
+    /*margin-bottom: 25px;*/
     position: relative;
     z-index: 999;
     background: #231f20;
@@ -160,6 +162,7 @@ a.open_country.flag_11:before {
     width: 33%;
     height: 40px;
     position: relative;
+    /* left: 139px; */
     z-index: 99;
 }
 
@@ -214,6 +217,8 @@ a.open_country.flag_11:before {
     width: 27%;
     height: 40px;
     text-align: right;
+    /* position: relative; */
+    /* right: 174px; */
 }
 
     #top_menu .top_dx > div {
@@ -306,13 +311,16 @@ Main Menu
 
 #menu {
     float: left;
-    width: 980px;
+    width: 688px;
     height: 80px;
+    position: relative;
+    right: 158px;
 }
 
 #main_menu {
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    <
+    li>               <a href="lookbook.html" class="mainCart">                 #movementbycampagnolo               </a>             </li>: 1;
 }
 
     #main_menu ul {
@@ -322,6 +330,7 @@ Main Menu
         text-align: center;
         font-size: 13px;
         height: 80px;
+        width: 829px;
     }
 
         #main_menu ul li {
@@ -686,7 +695,7 @@ Sub Menu
 Search
 --------------------------------------------------*/
 .search {
-    width: 217px;
+    width: 200px;
     float: right;
     z-index: 0;
     position: relative;
