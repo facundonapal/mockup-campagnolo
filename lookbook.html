@@ -457,6 +457,11 @@
                 E-Store
               </a>
             </li>
+            <li>
+              <a href="lookbook.html" class="mainCart">
+                #movementbycampagnolo
+              </a>
+            </li>
           </ul>
           <!-- /SUBMENU DESKTOP -->
         </div>
@@ -716,9 +721,9 @@
   <!--start PhotoSlurp embed code-->
   
   
-  <div class = "wrapper-widgets">
-    <h3 class="tab-heading">#movementbycampagnolo</h3>
-    <div class = "tabss">
+  <div class="wrapper-widgets">
+    <span class="tab-heading">#movementbycampagnolo</span>
+    <div class="tabss">
       <input type="radio" name="tabs" id="tab1" checked>
       <label for="tab1">
        <p class="tab-style">All</p>
@@ -735,6 +740,10 @@
      <label for="tab4">
        <p class="tab-style">Accesories</p>
      </label>
+    <!--  <input type="radio" name="tabs" id="tab5">
+     <label for="tab5">
+       <p class="tab-style">Collectibles</p>
+     </label> -->
      
      <div id="tab-content1" class="tab-content">
       <div id="widget-container1" class="ps-container">
@@ -756,6 +765,11 @@
         
       </div>
     </div>
+    <!-- <div id="tab-content5" class="tab-content">
+      <div id="widget-container5" class="ps-container">
+        
+      </div>
+    </div> -->
   </div>
 </div>
 
@@ -831,6 +845,23 @@
       visibleProducts: 2,
       debug: true
     };
+   /* photoSlurpWidgetSettings['widget-container5'] = {
+      widgetType: 'gallery',
+      albumId: 1240,
+      lang: 'en',
+      widgetId: 'lookbook-gallery-collectibles',
+      autoscrollLimit: 3, 
+      pageLimit: 18,
+      varyingThumbSizes: true,
+      pageType: 'lookbook',
+      theme: 'modern',
+      thumbOverlay: true,
+      collection: 'collectibles',
+      shopThisLookText:'Shop it now',
+      ctaButton:'Buy',
+      visibleProducts: 2,
+      debug: true
+    };*/
     var script = document.createElement('script');
     script.async = true;
     script.src = 'https://static.photoslurp.com/widget/v3/widget_loader.js';
