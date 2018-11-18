@@ -311,6 +311,7 @@ Typography
     color: #01437d;
     line-height: 53px;
     font-weight: 700;
+    margin-bottom: 28px;
 }
 
 @media (max-width: 991px) {
@@ -719,6 +720,7 @@ SLICK SLIDER
     color: #01437d;
     font-size: 7px;
     opacity: 1;
+    content: '\2022';
 }
 
 @media (max-width: 767px) {

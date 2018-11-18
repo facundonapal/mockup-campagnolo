@@ -1,0 +1,453 @@
+@import "variables";
+
+
+/*--------------------------------------------------
+Shop utilities
+--------------------------------------------------*/
+.product-image {
+    display: block;
+    max-width: 100%;
+}
+
+.shop-launch-category {
+    .product-image {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+    }
+}
+
+.product-description {
+    margin-top: 20px;
+
+    .product-name {
+        margin-bottom: 18px;
+    }
+
+    .price-wrap {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .older-price {
+        font-size: 16px;
+        color: $grey;
+        text-decoration: line-through;
+
+        @include xs {
+            font-size: 14px;
+        }
+    }
+
+    .price {
+        color: $black;
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+    .sale {
+        color: $orange;
+        margin-left: 20px;
+
+        @include sm {
+            margin-left: 10px;
+            font-size: 14px;
+        }
+    }
+
+    .button {
+        box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.product-image {
+    background: $lightgrey;
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.product-row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .shop-launch-product {
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 0 20px;
+
+        @include sm {
+            padding: 0 10px;
+        }
+
+        @include xs {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+
+.wishlist-button {
+    width: 20px;
+    height: 20px;
+
+    .material-icons {
+        font-size: 24px;
+        color: $blue;
+    }
+
+    .wish-added {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .wish-add {
+        opacity: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &.added, &:hover {
+        .wish-added {
+            opacity: 1;
+        }
+
+        .wish-add {
+            opacity: 0;
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+SLICK SLIDER
+--------------------------------------------------*/
+.slick-slider {
+    margin-bottom: 0;
+
+    .slick-prev, .slick-next {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        color: $blue;
+        background: $white;
+        border: 2px solid;
+
+        &:before {
+            font-family: 'Material Icons';
+            font-size: 28px;
+            line-height: 36px;
+            opacity: 1;
+            color: $blue;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            color: $lightblue;
+
+            &:before {
+                color: $lightblue;
+            }
+        }
+    }
+
+    .slick-prev {
+        left: -90px;
+
+        &:before {
+            content: "keyboard_arrow_left";
+        }
+    }
+
+    .slick-next {
+        right: -90px;
+
+        &:before {
+            content: "keyboard_arrow_right";
+        }
+    }
+
+    .slick-dots {
+        margin: 30px 0 0;
+        position: static;
+        bottom: auto;
+
+        li {
+
+            &.slick-active {
+                button:before {
+                    color: $lightblue;
+                    border: 2px solid;
+                    border-radius: 100%;
+                    content: '';
+                    width: 11px;
+                    height: 11px;
+                    top: 3px;
+                    left: 3px;
+                }
+            }
+
+            button:before {
+                color: $blue;
+                font-size: 7px;
+                opacity: 1;
+                content: '\2022';
+            }
+        }
+
+        @include xs {
+            margin: 10px 0 40px;
+        }
+    }
+
+    &.slick-initialized {
+        .slick-slide {
+            outline: none;
+            box-shadow: none;
+
+            &:focus, &:active {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.shop-launches-single {
+    .slick-dots {
+        @include xs {
+            margin: 30px 0 0;
+        }
+    }
+
+    .slick-dotted {
+        &.slick-slider {
+            margin-bottom: 0;
+        }
+    }
+}
+
+
+/*--------------------------------------------------
+WISHLIST
+--------------------------------------------------*/
+.list-wishlist {
+
+    .large-wrapper {
+        display: block;
+        margin-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include xs {
+            display: block;
+        }
+    }
+
+    .inWishlist {
+        flex: 0 0 33.30%;
+        max-width: 33.30%;
+        padding: 0 20px 40px;
+
+        @include sm {
+            flex: 0 0 49.90%;
+            max-width: 49.90%;
+        }
+
+        @include xs {
+            width: calc(100% - 10px);
+            float: none;
+            padding: 0 10px;
+            margin: 0px auto 40px;
+            max-width: none;
+        }
+
+        .indossato {
+            display: none;
+        }
+
+        .configuration {
+            margin: 32px 0px;
+
+            .list-color, .list-size {
+                padding: 11px 0px;
+            }
+        }
+
+        .button {
+            width: 50%;
+            float: left;
+
+            @include lg {
+                width: 100%;
+                float: none;
+            }
+        }
+
+        .remove-button {
+            margin-top: 14px;
+            color: #F03F35;
+            display: block;
+            width: 50%;
+            float: left;
+            text-align: center;
+
+            @include lg {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}
+
+.empty-wish-list {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+
+    .button {
+        display: block;
+        margin-top: 30px;
+        max-width: 220px;
+        margin: 30px auto 0;
+    }
+}
+
+
+.no-touch .list-wishlist .inWishlist {
+    .product-image {
+        position: relative;
+        z-index: 0;
+
+        .indossato {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            opacity: 0;
+            transition: opacity .25s;
+            backface-visibility: hidden;
+            display: block;
+            width: 100%;
+        }
+
+        &:hover {
+            .indossato {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+//modifiche wishlist su riga task 25646
+.no-touch {
+    .list-wishlist {
+        .inWishlist {
+            padding: 0 20px 40px;
+            width: 95%;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            .wishlist-item {
+                display: flex;
+                width: 100%;
+                padding: 0;
+                flex: 0 0 100%;
+                margin-bottom: 0;
+                justify-content: center;
+                align-items: center;
+
+                .product-image {
+                    position: relative;
+                    z-index: 0;
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .product-description {
+                    padding: 0 0 0 20px;
+                    flex: 0 0 70%;
+                    max-width: 70%;
+                    display: flex;
+                    align-content: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-bottom: 0;
+                    margin-top: 0;
+
+                    .price-wrap {
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+
+            .configuration {
+                margin: 15px 0px;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------
+DISPONIBILITA
+--------------------------------------------------*/
+[data-issellable="1"] {
+    .sellable_false {
+        display: none !important;
+    }
+}
+
+[data-issellable="0"] {
+    .sellable_true {
+        display: none !important;
+    }
+}
+
+/*--------------------------------------------------
+Survey temporaneo
+--------------------------------------------------*/
+.survey-wrap {
+    position: fixed;
+    right: 20px;
+    bottom: 0px;
+    z-index: 99;
+    -webkit-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.68);
+    box-shadow: 0px 0px 21px 2px rgba(0,0,0,0.68);
+}
+
+.survey-wrap .survey {
+    display: inline-block;
+    z-index: 9998;
+}
+
+.survey-wrap .survey-close {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: -6px;
+    z-index: 9999;
+    padding: 5px;
+}
+
+.survey-wrap .survey img {
+    max-width: 100%;
+}
+
+#product-carousel-heading {
+    margin-bottom: 100px !important;
+}

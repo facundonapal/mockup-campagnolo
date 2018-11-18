@@ -33,10 +33,125 @@
     left: -50px !important;
 }
 
+/*=========================
+    PRODUCTPAGE STYLES
+==========================*/
+
+.slick-slider .slick-dots li button:before {
+    content: '\2022';
+}
+
 #campagnolo-carousel-product .ps-carousel.ps-theme-modern .ps-carousel-slider.ps-slider-horizontal .ps-image img {
-object-fit: cover !important;
+    object-fit: cover !important;
+}
+
+.heading-container {
+    text-align: center;
+    margin-bottom: 17px;
 }
 
 #product-carousel-heading {
-    
+    font-size: 42px;
+    color: #01437d;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+}  
+
+#campagnolo-carousel-product {
+    padding-bottom: 100px;
 }
+
+/*=========================
+    LOOKBOOK STYLES
+==========================*/
+
+
+.tab-heading {
+    font-size: 60px;
+    line-height: 46px;
+    margin-left: 18%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.wrapper-widgets {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 69px;
+    max-width: 1170px;
+    margin-bottom: 56px;
+}
+
+.tabss {
+    text-align: center !important;
+    margin-top: 59px;
+}
+
+.tabss input[type=radio] {
+    display:none;
+}
+
+.tabss label {
+    display: inline-grid;
+    width: 24%;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    margin-bottom: 57px;
+    transition: border-bottom 1s ease;
+    border-bottom: 1px transparent solid;
+}
+
+
+.tabss [id^="tab"]:checked + label {
+    border-bottom: 1px solid #05301a;
+    border-bottom-width: thin; 
+}
+
+.tab-style {
+    color: #252424;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+ #tab1:checked ~ #tab-content1,
+ #tab2:checked ~ #tab-content2,
+ #tab3:checked ~ #tab-content3,
+ #tab4:checked ~ #tab-content4/*,
+ #tab4:checked ~ #tab-content5*/ {
+    display: block;
+}
+
+.tab-content {
+    display: none;
+    width: 100%;
+}
+
+.ps-load-more-button {
+    /*background: #2d2c2c !important;
+    padding: 10px 20px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    border: 1px solid #242931 !important;
+    font-size: 16px !important;
+    text-transform: uppercase !important;
+    font-weight: 700 !important;
+    margin-top: 24px !important;*/
+
+    outline: none;
+    border: none !important;
+    background: #4b4c4c !important;
+    padding: 5px 15px 5px !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.ps-load-more-button:hover {
+    background: #000 !important;
+
+
+
